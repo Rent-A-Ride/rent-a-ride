@@ -1,0 +1,41 @@
+CREATE TABLE CUSTOMERS (
+    id INT AUTO_INCREMENT,
+    customerNIC VARCHAR(50) NOT NULL,
+    customerName VARCHAR(255) NOT NULL,
+    customerEmail VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    customerAddress VARCHAR(255) NOT NULL,
+    customerPhone VARCHAR(255) NOT NULL,
+    create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY(id,customerNIC)
+);
+
+CREATE TABLE Vehicles (
+    vehicleId INT AUTO_INCREMENT,
+    voId INT,
+    cusID INT,
+    plateNo VARCHAR(50) NOT NULL,
+    body TEXT,
+    Availability BOOLEAN NOT NULL,
+    posted_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY(vehicleId),
+    FOREIGN KEY (cusID) REFERENCES CUSTOMERS(id) ON UPDATE CASCADE
+);
+
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY(id)
+);
+
+CREATE VIEW
+
+INSERT INTO CUSTOMER VALUES(1, '991131175V', 'Hasantha', 'hasantha@gmail.com', 'Galle', '071');
+INSERT INTO CUSTOMER VALUES('991131185V', 'Kalana', 'kalana@gmail.com', 'Hikkaduwa', '077');
+INSERT INTO CUSTOMER VALUES('991131195V', 'Buddhi', 'buddhi@gmail.com', 'Gampaha', '076');

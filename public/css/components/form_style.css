@@ -1,0 +1,85 @@
+form .form-container {
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    left: 25%;
+    transition: 0.4s;
+    /*overflow: hidden;*/
+}
+
+.form-container input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, input[type=text]:focus, input[type=password]:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-container hr {
+    /*visibility: hidden;*/
+    margin-bottom: 25px;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(122, 122, 122, 0.75), rgba(122, 122, 122, 0.5), rgba(255, 255, 255, 0));
+}
+
+/* Set a style for all buttons */
+.form-container button, input[type=submit] {
+    background-color: #FAB84C;
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 0 8px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.form-container button, input[type=submit]:hover {
+    opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.form-container .signupbtn,.form-container .signinbtn {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    width: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Add padding to container elements */
+.form-container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.form-container .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form-invalid {
+    font-size: x-small;
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .signupbtn, .signinbtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.title {
+    margin: 10px 0;
+    transition: 0.8s;
+}
+
+.title h1 {
+    padding: 10px;
+}
+
+
+
+.title a {
+    padding: 5px;
+    color: #1d1b31;
+    text-decoration: none;
+    font-weight: normal;
+    margin:0  5px;
+    cursor: pointer;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+hr.hr {
+    border: 0;
+    height: 0;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.profile {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profile .data span {
+    font-size: 12px;
+}
+
+span.strong {
+    font-weight: bold;
+}
+
+.edit-btn {
+    position: relative;
+    left: 82%;
+    font-size: x-small;
+    padding: 5px 10px;
+    width: max-content;
+    background-color: #FAB84C;
+    border-radius: 15px;
+
+}
+
+.profile a{
+    text-decoration: none;
+    color: black;
+}
